@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28149069baa727c66a699dd0e67ef568 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_28149069baa727c66a699dd0e67ef568" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28149069baa727c66a699dd0e67ef568 = L.map(
+                "map_28149069baa727c66a699dd0e67ef568",
+                {
+                    center: [21.679234, 95.79629600000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_111da374e92034c597934bc99b4417db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_111da374e92034c597934bc99b4417db.addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+            var marker_f8aec110e6e53c47dadddfa4b8f30810 = L.marker(
+                [21.61325, 96.13033],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_34d52a912892c4564e8583e6dedce311 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_88c50bc62397b2f15ec60cf6008acb0c = $(`<div id="html_88c50bc62397b2f15ec60cf6008acb0c" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Jimi Hendrix<br>     <strong>Note:</strong> An American guitarist, singer, and songwriter, Jimi Hendrix is widely regarded as one of the most influential electric guitarists in the history of popular music. His innovative use of feedback and distortion forever changed the sound of rock music.<br>     <strong>Phone:</strong> +99-9-123-456-001<br>     <strong>Email:</strong> jimi_hendrix@email.com     </div>`)[0];
+                popup_34d52a912892c4564e8583e6dedce311.setContent(html_88c50bc62397b2f15ec60cf6008acb0c);
+            
+        
+
+        marker_f8aec110e6e53c47dadddfa4b8f30810.bindPopup(popup_34d52a912892c4564e8583e6dedce311)
+        ;
+
+        
+    
+    
+            var marker_7db2315d15b14ac9225a83edce6d00f0 = L.marker(
+                [20.84248, 95.13218],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_1384904f1ba8ffa5a5b6781d75526e72 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_fc9003a7d1d2917994ebe78952e3df63 = $(`<div id="html_fc9003a7d1d2917994ebe78952e3df63" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Eric Clapton<br>     <strong>Note:</strong> A British guitarist, singer, and songwriter, Eric Clapton is the only three-time inductee to the Rock and Roll Hall of Fame (as a solo artist and as a member of The Yardbirds and Cream). He is known for his expressive blues guitar playing and hit songs like "Layla" and "Tears in Heaven."<br>     <strong>Phone:</strong> +99-9-123-456-002<br>     <strong>Email:</strong> eric_clapton@email.com     </div>`)[0];
+                popup_1384904f1ba8ffa5a5b6781d75526e72.setContent(html_fc9003a7d1d2917994ebe78952e3df63);
+            
+        
+
+        marker_7db2315d15b14ac9225a83edce6d00f0.bindPopup(popup_1384904f1ba8ffa5a5b6781d75526e72)
+        ;
+
+        
+    
+    
+            var marker_6332819aa92253eabfb6555b013491b5 = L.marker(
+                [21.3583, 96.1603],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_aeec1367436e2a4455e1f96332fdcfda = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_7f940b7a79793770c957207711d9b0e1 = $(`<div id="html_7f940b7a79793770c957207711d9b0e1" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Jimmy Page<br>     <strong>Note:</strong> An English musician and producer, Jimmy Page is the lead guitarist and founder of the rock band Led Zeppelin. He is known for his complex riffs, innovative use of guitar effects, and as a pioneer of hard rock and heavy metal.<br>     <strong>Phone:</strong> +99-9-123-456-003<br>     <strong>Email:</strong> jimmy_page@email.com     </div>`)[0];
+                popup_aeec1367436e2a4455e1f96332fdcfda.setContent(html_7f940b7a79793770c957207711d9b0e1);
+            
+        
+
+        marker_6332819aa92253eabfb6555b013491b5.bindPopup(popup_aeec1367436e2a4455e1f96332fdcfda)
+        ;
+
+        
+    
+    
+            var marker_34ccb6c9d8fdf6994f8d2dc7fcc86b04 = L.marker(
+                [21.939404, 96.095838],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_05bd0dd79aed3b0d23fc83c17e6fed29 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_e758f5937a92df6ccd6f79ff23caa1da = $(`<div id="html_e758f5937a92df6ccd6f79ff23caa1da" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Keith Richards<br>     <strong>Note:</strong> A British guitarist and co-founder of The Rolling Stones, Keith Richards is celebrated for his rhythm guitar playing and songwriting partnership with Mick Jagger. His work has shaped the sound of rock and roll for over five decades.<br>     <strong>Phone:</strong> +99-9-123-456-004<br>     <strong>Email:</strong> keith_richards@email.com     </div>`)[0];
+                popup_05bd0dd79aed3b0d23fc83c17e6fed29.setContent(html_e758f5937a92df6ccd6f79ff23caa1da);
+            
+        
+
+        marker_34ccb6c9d8fdf6994f8d2dc7fcc86b04.bindPopup(popup_05bd0dd79aed3b0d23fc83c17e6fed29)
+        ;
+
+        
+    
+    
+            var marker_9af4c53b07539e8464fe899ca87879d5 = L.marker(
+                [21.97535, 96.094599],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_3e6d6a6157d7b9fda25c288310d49663 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_173b12886e74554994d171aa4e572fda = $(`<div id="html_173b12886e74554994d171aa4e572fda" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> David Gilmour<br>     <strong>Note:</strong> An English musician, singer, and songwriter, David Gilmour is best known as the guitarist and co-lead vocalist of Pink Floyd. His melodic solos and use of effects have become iconic, particularly on tracks like "Comfortably Numb."<br>     <strong>Phone:</strong> +99-9-123-456-005<br>     <strong>Email:</strong> david_gilmour@email.com     </div>`)[0];
+                popup_3e6d6a6157d7b9fda25c288310d49663.setContent(html_173b12886e74554994d171aa4e572fda);
+            
+        
+
+        marker_9af4c53b07539e8464fe899ca87879d5.bindPopup(popup_3e6d6a6157d7b9fda25c288310d49663)
+        ;
+
+        
+    
+    
+            var marker_ec933273af240fd26e978b32f91626de = L.marker(
+                [21.15058, 95.13772],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_a86568d4d06cf17be3d98f9f8dc79eb3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_2d0201321bc81e20a2842feb673e0def = $(`<div id="html_2d0201321bc81e20a2842feb673e0def" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Eddie Van Halen<br>     <strong>Note:</strong> A Dutch-American guitarist and co-founder of the rock band Van Halen, Eddie Van Halen is renowned for his virtuosic playing style, including the innovative two-handed tapping technique. He is considered one of the greatest guitarists in rock history.<br>     <strong>Phone:</strong> +99-9-123-456-006<br>     <strong>Email:</strong> eddie_van_halen@email.com     </div>`)[0];
+                popup_a86568d4d06cf17be3d98f9f8dc79eb3.setContent(html_2d0201321bc81e20a2842feb673e0def);
+            
+        
+
+        marker_ec933273af240fd26e978b32f91626de.bindPopup(popup_a86568d4d06cf17be3d98f9f8dc79eb3)
+        ;
+
+        
+    
+    
+            var marker_a5872bfc2d3abfd52a5488672c46fd11 = L.marker(
+                [21.898457, 95.687232],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_9d4d90559a1579aaea6371999860fbc9 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_729bf859b32ade76caa96a2c8a816dd7 = $(`<div id="html_729bf859b32ade76caa96a2c8a816dd7" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Slash<br>     <strong>Note:</strong> An English-American musician, Slash is the lead guitarist of Guns N' Roses. Recognizable by his top hat and curly hair, he is known for his powerful riffs and iconic solos, especially on songs like "Sweet Child o' Mine."<br>     <strong>Phone:</strong> +99-9-123-456-007<br>     <strong>Email:</strong> slash@email.com     </div>`)[0];
+                popup_9d4d90559a1579aaea6371999860fbc9.setContent(html_729bf859b32ade76caa96a2c8a816dd7);
+            
+        
+
+        marker_a5872bfc2d3abfd52a5488672c46fd11.bindPopup(popup_9d4d90559a1579aaea6371999860fbc9)
+        ;
+
+        
+    
+    
+            var marker_8ed03843d94534ca9fdce4347cd43e64 = L.marker(
+                [21.731137, 96.10611],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_61981cc5847e788be1d16e10b9b1ac30 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d619c59a3ac3c4f3c8e312eab19ce3eb = $(`<div id="html_d619c59a3ac3c4f3c8e312eab19ce3eb" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Brian May<br>     <strong>Note:</strong> An English musician, Brian May is the lead guitarist of Queen. He is known for his distinctive guitar tone, achieved with a homemade guitar, and for writing some of the band's most famous songs, including "We Will Rock You."<br>     <strong>Phone:</strong> +99-9-123-456-008<br>     <strong>Email:</strong> brian_may@email.com     </div>`)[0];
+                popup_61981cc5847e788be1d16e10b9b1ac30.setContent(html_d619c59a3ac3c4f3c8e312eab19ce3eb);
+            
+        
+
+        marker_8ed03843d94534ca9fdce4347cd43e64.bindPopup(popup_61981cc5847e788be1d16e10b9b1ac30)
+        ;
+
+        
+    
+    
+            var marker_fca7e7a660a693eb550496c5c3923658 = L.marker(
+                [22.548382, 95.996551],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_b8c7494001494624b51bca6f2fb97f52 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bdd297ab523e8f6f6a189104923f52c9 = $(`<div id="html_bdd297ab523e8f6f6a189104923f52c9" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Jeff Beck<br>     <strong>Note:</strong> An English guitarist, Jeff Beck is one of the most innovative guitarists in rock history, known for his work with The Yardbirds and his genre-blending solo career. He has been influential in rock, blues, and jazz fusion.<br>     <strong>Phone:</strong> +99-9-123-456-009<br>     <strong>Email:</strong> jeff_beck@email.com     </div>`)[0];
+                popup_b8c7494001494624b51bca6f2fb97f52.setContent(html_bdd297ab523e8f6f6a189104923f52c9);
+            
+        
+
+        marker_fca7e7a660a693eb550496c5c3923658.bindPopup(popup_b8c7494001494624b51bca6f2fb97f52)
+        ;
+
+        
+    
+    
+            var marker_7a564d100c25f67308f2498d8f29d01f = L.marker(
+                [21.735, 95.4221],
+                {}
+            ).addTo(map_28149069baa727c66a699dd0e67ef568);
+        
+    
+        var popup_a24303620b552bfe6bb0b4f35bf28ec6 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_aeb1288572f0920880bd90946583237b = $(`<div id="html_aeb1288572f0920880bd90946583237b" style="width: 100.0%; height: 100.0%;">     <strong>Name:</strong> Carlos Santana<br>     <strong>Note:</strong> A Mexican-American guitarist, Carlos Santana is famous for blending rock with Latin American music. His fluid, melodic guitar playing and hit songs like "Black Magic Woman" and "Smooth" have made him an enduring figure in music.<br>     <strong>Phone:</strong> +99-9-123-456-010<br>     <strong>Email:</strong> carlos_santana@email.com     </div>`)[0];
+                popup_a24303620b552bfe6bb0b4f35bf28ec6.setContent(html_aeb1288572f0920880bd90946583237b);
+            
+        
+
+        marker_7a564d100c25f67308f2498d8f29d01f.bindPopup(popup_a24303620b552bfe6bb0b4f35bf28ec6)
+        ;
+
+        
+    
+</script>
+</html>
